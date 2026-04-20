@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Viral Vault India — Analytics</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js"></script>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #0f0f0f; color: #fff; min-height: 100vh; }
+  .header { background: #1a1a1a; border-bottom: 1px solid #2a2a2a; padding: 16px 24px; display: flex; align-items: center; justify-content: space-between; }
+  .header h1 { font-size: 18px; font-weight: 600; }
+  .header h1 span { color: #ff4444; }
+  .updated { font-size: 12px; color: #888; }
+  .container { max-width: 1100px; margin: 0 auto; padding: 24px; }
+  .metrics { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 12px; margin-bottom: 24px; }
+  .metric { background: #1a1a1a; border: 1px solid #2a2a2a; border-radius: 12px; padding: 16px; }
+  .metric .label { font-size: 12px; color: #888; margin-bottom: 6px; }
+  .metric .value { font-size: 26px; font-weight: 600; }
+  .metric .sub { font-size: 12px; color: #666; margin-top: 4px; }
+  .grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 24px; }
+  .card { background: #1a1a1a; border: 1px solid #2a2a2a; border-radius: 12px; padding: 16px; }
+  .card h3 { font-size: 13px; color: #888; margin-bottom: 12px; font-weight: 500; }
+  .progress-wrap { margin-bottom: 16px; }
+  .progress-label { display: flex; justify-content: space-between; font-size: 12px; color: #aaa; margin-bottom: 6px; }
+  .progress-track { height: 8px; background: #2a2a2a; border-radius: 4px; overflow: hidden; }
+  .progress-bar { height: 100%; border-radius: 4px; transition: width 0.8s ease; }
+  .bar-blue { background: linear-gradient(90deg, #3b82f6, #60a5fa); }
+  .bar-green { background: linear-gradient(90deg, #10b981, #34d399); }
+  .mono-status { text-align: center; padding: 10px; border-radius: 8px; font-size: 13px; font-weight: 500; margin-top: 8px; }
+  .mono-pending { background: #2a2000; color: #fbbf24; }
+  .mono-eligible { background: #002a14; color: #34d399; }
+  .videos-list { display: flex; flex-direction: column; gap: 10px; margin-bottom: 24px; }
+  .video-item { background: #1a1a1a; border: 1px solid #2a2a2a; border-radius: 12px; padding: 12px 16px; display: flex; align-items: center; gap: 12px; text-decoration: none; color: inherit; transition: border-color 0.2s; }
+  .video-item:hover { border-color: #444; }
+  .video-rank { font-size: 18px; font-weight: 700; color: #444; min-width: 28px; }
+  .video-thumb { width: 80px; height: 45px; border-radius: 6px; object-fit: cover; background: #2a2a2a; flex-shrink: 0; }
+  .video-info { flex: 1; min-width: 0; }
+  .video-title { font-size: 13px; font-weight: 500; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; margin-bottom: 4px; }
+  .video-stats { font-size: 12px; color: #888; }
+  .badge { font-size: 11px; padding: 3px 8px; border-radius: 6px; background: #1e3a5f; color: #60a5fa; flex-shrink: 0; }
+  .chart-wrap { position: relative; height: 200px; }
+  .section-title { font-size: 14px; font-weight: 500; color: #aaa; margin-bottom: 12px; }
+  @media (max-width: 600px) { .grid2 { grid-template-columns: 1fr; } .metrics { grid-template-columns: repeat(2, 1fr); } }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1><span>▶</span> Viral Vault India</h1>
+  <span class="updated" id="updated">Loading...</span>
+</div>
+
+<div class="container">
+
+  <div class="metrics" id="metrics">
+    <div class="metric"><div class="label">Subscribers</div><div class="value" id="m-subs">—</div></div>
+    <div class="metric"><div class="label">Total views</div><div class="value" id="m-views">—</div></div>
+    <div class="metric"><div class="label">Watch hours</div><div class="value" id="m-hours">—</div><div class="sub">Need 4,000</div></div>
+    <div class="metric"><div class="label">Videos posted</div><div class="value" id="m-videos">—</div></div>
+    <div class="metric"><div class="label">Avg views/video</div><div class="value" id="m-avg">—</div></div>
+    <div class="metric"><div class="label">Days to monetize</div><div class="value" id="m-days">—</div></div>
+  </div>
+
+  <div class="grid2">
+    <div class="card">
+      <h3>Views over time</h3>
+      <div class="chart-wrap"><canvas id="viewsChart" role="img" aria-label="Daily views over time">Views chart</canvas></div>
+    </div>
+    <div class="card">
+      <h3>Subscriber growth</h3>
+      <div class="chart-wrap"><canvas id="subsChart" role="img" aria-label="Subscriber growth over time">Subs chart</canvas></div>
+    </div>
+  </div>
+
+  <div class="grid2" style="margin-bottom:24px;">
+    <div class="card">
+      <h3>Monetization progress</h3>
+      <div class="progress-wrap">
+        <div class="progress-label"><span>Subscribers</span><span id="subs-lbl">0 / 1,000</span></div>
+        <div class="progress-track"><div class="progress-bar bar-blue" id="subs-bar" style="width:0%"></div></div>
+      </div>
+      <div class="progress-wrap">
+        <div class="progress-label"><span>Watch hours</span><span id="hours-lbl">0 / 4,000</span></div>
+        <div class="progress-track"><div class="progress-bar bar-green" id="hours-bar" style="width:0%"></div></div>
+      </div>
+      <div class="mono-status mono-pending" id="mono-status">Keep posting — you're on your way!</div>
+    </div>
+    <div class="card">
+      <h3>Traffic sources (estimate)</h3>
+      <div class="chart-wrap" style="height:160px;"><canvas id="sourceChart" role="img" aria-label="Traffic sources">Traffic chart</canvas></div>
+    </div>
+  </div>
+
+  <p class="section-title">Top performing videos</p>
+  <div class="videos-list" id="videosList">
+    <p style="color:#666;font-size:13px;">Loading...</p>
+  </div>
+
+</div>
+
+<script>
+async function load() {
+  const res  = await fetch('data.json?t=' + Date.now());
+  const data = await res.json();
+
+  document.getElementById('updated').textContent = 'Updated: ' + data.updated;
+
+  const subs   = data.subs   || 0;
+  const views  = data.views  || 0;
+  const hours  = data.hours  || 0;
+  const videos = data.videos || 0;
+  const avg    = videos ? Math.round(views / videos) : 0;
+
+  document.getElementById('m-subs').textContent   = subs.toLocaleString();
+  document.getElementById('m-views').textContent  = views.toLocaleString();
+  document.getElementById('m-hours').textContent  = hours.toLocaleString();
+  document.getElementById('m-videos').textContent = videos;
+  document.getElementById('m-avg').textContent    = avg.toLocaleString();
+
+  // Days to monetize estimate
+  const hist = data.history || [];
+  if (hist.length >= 2) {
+    const recent = hist.slice(-7);
+    const avgSubsDay = (recent[recent.length-1].subs - recent[0].subs) / Math.max(recent.length-1, 1);
+    const daysLeft = avgSubsDay > 0 ? Math.round((1000 - subs) / avgSubsDay) : 999;
+    document.getElementById('m-days').textContent = daysLeft < 999 ? daysLeft + 'd' : '—';
+  } else {
+    document.getElementById('m-days').textContent = '—';
+  }
+
+  // Monetization bars
+  const subsP  = Math.min(100, Math.round(subs / 1000 * 100));
+  const hoursP = Math.min(100, Math.round(hours / 4000 * 100));
+  document.getElementById('subs-bar').style.width  = subsP + '%';
+  document.getElementById('hours-bar').style.width = hoursP + '%';
+  document.getElementById('subs-lbl').textContent  = subs.toLocaleString() + ' / 1,000';
+  document.getElementById('hours-lbl').textContent = hours.toLocaleString() + ' / 4,000';
+  const monoEl = document.getElementById('mono-status');
+  if (subsP >= 100 && hoursP >= 100) {
+    monoEl.textContent = 'Eligible for monetization!';
+    monoEl.className = 'mono-status mono-eligible';
+  } else {
+    monoEl.textContent = subsP + '% subs · ' + hoursP + '% watch hours';
+  }
+
+  // Charts
+  const labels    = hist.map(h => h.date.slice(5));
+  const viewsData = hist.map(h => h.views);
+  const subsData  = hist.map((h, i) => i > 0 ? h.subs - hist[i-1].subs : 0);
+
+  new Chart(document.getElementById('viewsChart'), {
+    type: 'line',
+    data: { labels, datasets: [{ data: viewsData, borderColor: '#3b82f6', backgroundColor: 'rgba(59,130,246,0.08)', fill: true, tension: 0.4, pointRadius: 2 }] },
+    options: { responsive: true, maintainAspectRatio: false, plugins: { legend: { display: false } }, scales: { x: { ticks: { color: '#666', font: { size: 11 }, maxTicksLimit: 6 }, grid: { color: '#222' } }, y: { ticks: { color: '#666', font: { size: 11 } }, grid: { color: '#222' } } } }
+  });
+
+  new Chart(document.getElementById('subsChart'), {
+    type: 'bar',
+    data: { labels, datasets: [{ data: subsData, backgroundColor: '#10b981' }] },
+    options: { responsive: true, maintainAspectRatio: false, plugins: { legend: { display: false } }, scales: { x: { ticks: { color: '#666', font: { size: 11 }, maxTicksLimit: 6 }, grid: { color: '#222' } }, y: { ticks: { color: '#666', font: { size: 11 } }, grid: { color: '#222' } } } }
+  });
+
+  new Chart(document.getElementById('sourceChart'), {
+    type: 'doughnut',
+    data: { labels: ['Shorts feed','Browse','Search','External','Direct'], datasets: [{ data: [42,28,15,10,5], backgroundColor: ['#3b82f6','#10b981','#f59e0b','#ec4899','#8b5cf6'] }] },
+    options: { responsive: true, maintainAspectRatio: false, plugins: { legend: { position: 'right', labels: { color: '#aaa', font: { size: 11 }, boxWidth: 10 } } } }
+  });
+
+  // Top videos
+  const vidsEl = document.getElementById('videosList');
+  if (!data.top_videos || !data.top_videos.length) {
+    vidsEl.innerHTML = '<p style="color:#666;font-size:13px;">No video data yet — will appear after first GitHub Action run.</p>';
+    return;
+  }
+  vidsEl.innerHTML = data.top_videos.map((v, i) => `
+    <a class="video-item" href="${v.url}" target="_blank">
+      <span class="video-rank">${i+1}</span>
+      <img class="video-thumb" src="${v.thumb}" alt="${v.title}" loading="lazy" />
+      <div class="video-info">
+        <div class="video-title">${v.title}</div>
+        <div class="video-stats">${v.views.toLocaleString()} views · ${v.likes.toLocaleString()} likes · ${v.published}</div>
+      </div>
+      <span class="badge">Short</span>
+    </a>
+  `).join('');
+}
+
+load().catch(e => console.error(e));
+</script>
+</body>
+</html>

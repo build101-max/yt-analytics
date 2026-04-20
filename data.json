@@ -1,10 +1,52 @@
 {
-  "updated": "Not fetched yet",
+  "updated": "2026-04-20 09:22 UTC",
   "channel": "Viral Vault India",
-  "subs": 0,
-  "views": 0,
-  "videos": 0,
-  "hours": 0,
-  "history": [],
-  "top_videos": []
+  "subs": 1,
+  "views": 15,
+  "videos": 3,
+  "hours": 1,
+  "history": [
+    {
+      "date": "2026-04-20",
+      "views": 15,
+      "subs": 1,
+      "videos": 3,
+      "hours": 1
+    }
+  ],
+  "top_videos": [
+    {
+      "id": "VXcZZWZtipE",
+      "title": "Wait for it... \ud83d\ude31 #shorts #viral #unexpected",
+      "thumb": "https://i.ytimg.com/vi/VXcZZWZtipE/mqdefault.jpg",
+      "views": 1059,
+      "likes": 10,
+      "comments": 0,
+      "duration": "PT16S",
+      "published": "2026-04-20",
+      "url": "https://youtube.com/watch?v=VXcZZWZtipE"
+    },
+    {
+      "id": "5k38DXn9S2g",
+      "title": "Nobody saw this coming \ud83d\ude28 #shorts #unexpected #viral",
+      "thumb": "https://i.ytimg.com/vi/5k38DXn9S2g/mqdefault.jpg",
+      "views": 10,
+      "likes": 1,
+      "comments": 0,
+      "duration": "PT2M57S",
+      "published": "2026-04-20",
+      "url": "https://youtube.com/watch?v=5k38DXn9S2g"
+    },
+    {
+      "id": "s4YZ8fUf_A4",
+      "title": "Nobody saw this coming \ud83d\ude28 #shorts #unexpected #viral",
+      "thumb": "https://i.ytimg.com/vi/s4YZ8fUf_A4/mqdefault.jpg",
+      "views": 14,
+      "likes": 1,
+      "comments": 0,
+      "duration": "PT13S",
+      "published": "2026-04-20",
+      "url": "https://youtube.com/watch?v=s4YZ8fUf_A4"
+    }
+  ]
 }

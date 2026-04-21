@@ -1,9 +1,9 @@
 {
-  "updated": "2026-04-20 09:22 UTC",
+  "updated": "2026-04-21 05:46 UTC",
   "channel": "Viral Vault India",
   "subs": 1,
   "views": 15,
-  "videos": 3,
+  "videos": 5,
   "hours": 1,
   "history": [
     {
@@ -12,6 +12,13 @@
       "subs": 1,
       "videos": 3,
       "hours": 1
+    },
+    {
+      "date": "2026-04-21",
+      "views": 15,
+      "subs": 1,
+      "videos": 5,
+      "hours": 1
     }
   ],
   "top_videos": [
@@ -19,7 +26,7 @@
       "id": "VXcZZWZtipE",
       "title": "Wait for it... \ud83d\ude31 #shorts #viral #unexpected",
       "thumb": "https://i.ytimg.com/vi/VXcZZWZtipE/mqdefault.jpg",
-      "views": 1059,
+      "views": 1100,
       "likes": 10,
       "comments": 0,
       "duration": "PT16S",
@@ -27,10 +34,32 @@
       "url": "https://youtube.com/watch?v=VXcZZWZtipE"
     },
     {
+      "id": "s4YZ8fUf_A4",
+      "title": "Nobody saw this coming \ud83d\ude28 #shorts #unexpected #viral",
+      "thumb": "https://i.ytimg.com/vi/s4YZ8fUf_A4/mqdefault.jpg",
+      "views": 15,
+      "likes": 1,
+      "comments": 0,
+      "duration": "PT13S",
+      "published": "2026-04-20",
+      "url": "https://youtube.com/watch?v=s4YZ8fUf_A4"
+    },
+    {
+      "id": "TUermLXZbXs",
+      "title": "Unbelievable Moments That Will Leave You Speechless \ud83e\udd2f",
+      "thumb": "https://i.ytimg.com/vi/TUermLXZbXs/mqdefault.jpg",
+      "views": 1,
+      "likes": 1,
+      "comments": 0,
+      "duration": "PT2M30S",
+      "published": "2026-04-21",
+      "url": "https://youtube.com/watch?v=TUermLXZbXs"
+    },
+    {
       "id": "5k38DXn9S2g",
       "title": "Nobody saw this coming \ud83d\ude28 #shorts #unexpected #viral",
       "thumb": "https://i.ytimg.com/vi/5k38DXn9S2g/mqdefault.jpg",
-      "views": 10,
+      "views": 15,
       "likes": 1,
       "comments": 0,
       "duration": "PT2M57S",
@@ -38,15 +67,15 @@
       "url": "https://youtube.com/watch?v=5k38DXn9S2g"
     },
     {
-      "id": "s4YZ8fUf_A4",
-      "title": "Nobody saw this coming \ud83d\ude28 #shorts #unexpected #viral",
-      "thumb": "https://i.ytimg.com/vi/s4YZ8fUf_A4/mqdefault.jpg",
-      "views": 14,
-      "likes": 1,
+      "id": "dRfdtbRKNJc",
+      "title": "Wait for it... \ud83d\ude31 #shorts #viral #unexpected",
+      "thumb": "https://i.ytimg.com/vi/dRfdtbRKNJc/mqdefault.jpg",
+      "views": 0,
+      "likes": 0,
       "comments": 0,
-      "duration": "PT13S",
-      "published": "2026-04-20",
-      "url": "https://youtube.com/watch?v=s4YZ8fUf_A4"
+      "duration": "PT52S",
+      "published": "2026-04-21",
+      "url": "https://youtube.com/watch?v=dRfdtbRKNJc"
     }
   ]
 }

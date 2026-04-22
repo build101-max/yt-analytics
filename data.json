@@ -1,9 +1,9 @@
 {
-  "updated": "2026-04-21 10:51 UTC",
+  "updated": "2026-04-22 10:48 UTC",
   "channel": "Viral Vault India",
   "subs": 1,
-  "views": 1133,
-  "videos": 5,
+  "views": 1136,
+  "videos": 6,
   "hours": 74,
   "history": [
     {
@@ -19,6 +19,13 @@
       "subs": 1,
       "videos": 5,
       "hours": 1
+    },
+    {
+      "date": "2026-04-22",
+      "views": 1136,
+      "subs": 1,
+      "videos": 6,
+      "hours": 74
     }
   ],
   "top_videos": [
@@ -43,6 +50,17 @@
       "duration": "PT13S",
       "published": "2026-04-20",
       "url": "https://youtube.com/watch?v=s4YZ8fUf_A4"
+    },
+    {
+      "id": "lNH0zKuBIEA",
+      "title": "Most Shocking Moments Caught on Camera \ud83d\ude31 #viral #unexpected",
+      "thumb": "https://i.ytimg.com/vi/lNH0zKuBIEA/mqdefault.jpg",
+      "views": 2,
+      "likes": 1,
+      "comments": 0,
+      "duration": "PT3M27S",
+      "published": "2026-04-22",
+      "url": "https://youtube.com/watch?v=lNH0zKuBIEA"
     },
     {
       "id": "TUermLXZbXs",

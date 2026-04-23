@@ -1,9 +1,9 @@
 {
-  "updated": "2026-04-22 10:48 UTC",
+  "updated": "2026-04-23 10:54 UTC",
   "channel": "Viral Vault India",
   "subs": 1,
   "views": 1136,
-  "videos": 6,
+  "videos": 9,
   "hours": 74,
   "history": [
     {
@@ -26,6 +26,13 @@
       "subs": 1,
       "videos": 6,
       "hours": 74
+    },
+    {
+      "date": "2026-04-23",
+      "views": 1136,
+      "subs": 1,
+      "videos": 9,
+      "hours": 74
     }
   ],
   "top_videos": [
@@ -33,12 +40,23 @@
       "id": "VXcZZWZtipE",
       "title": "Wait for it... \ud83d\ude31 #shorts #viral #unexpected",
       "thumb": "https://i.ytimg.com/vi/VXcZZWZtipE/mqdefault.jpg",
-      "views": 1100,
+      "views": 1097,
       "likes": 10,
       "comments": 0,
       "duration": "PT16S",
       "published": "2026-04-20",
       "url": "https://youtube.com/watch?v=VXcZZWZtipE"
+    },
+    {
+      "id": "5k38DXn9S2g",
+      "title": "Nobody saw this coming \ud83d\ude28 #shorts #unexpected #viral",
+      "thumb": "https://i.ytimg.com/vi/5k38DXn9S2g/mqdefault.jpg",
+      "views": 15,
+      "likes": 1,
+      "comments": 0,
+      "duration": "PT2M57S",
+      "published": "2026-04-20",
+      "url": "https://youtube.com/watch?v=5k38DXn9S2g"
     },
     {
       "id": "s4YZ8fUf_A4",
@@ -74,15 +92,15 @@
       "url": "https://youtube.com/watch?v=TUermLXZbXs"
     },
     {
-      "id": "5k38DXn9S2g",
-      "title": "Nobody saw this coming \ud83d\ude28 #shorts #unexpected #viral",
-      "thumb": "https://i.ytimg.com/vi/5k38DXn9S2g/mqdefault.jpg",
-      "views": 15,
+      "id": "EziTSeY7PvY",
+      "title": "\ud83d\udea8 Match Thread: 30th Match - Gujarat Titans vs Mumbai Ind | Reddit Reacts",
+      "thumb": "https://i.ytimg.com/vi/EziTSeY7PvY/mqdefault.jpg",
+      "views": 1,
       "likes": 1,
       "comments": 0,
-      "duration": "PT2M57S",
-      "published": "2026-04-20",
-      "url": "https://youtube.com/watch?v=5k38DXn9S2g"
+      "duration": "PT24S",
+      "published": "2026-04-22",
+      "url": "https://youtube.com/watch?v=EziTSeY7PvY"
     },
     {
       "id": "dRfdtbRKNJc",
@@ -94,6 +112,28 @@
       "duration": "PT52S",
       "published": "2026-04-21",
       "url": "https://youtube.com/watch?v=dRfdtbRKNJc"
+    },
+    {
+      "id": "1dsT1xI-X1g",
+      "title": "Cricket fans DIVIDED: Match Thread: 31st Match - Sunrisers Hyderabad vs Delhi \ud83d\udc40",
+      "thumb": "https://i.ytimg.com/vi/1dsT1xI-X1g/mqdefault.jpg",
+      "views": 0,
+      "likes": 0,
+      "comments": 0,
+      "duration": "PT59S",
+      "published": "2026-04-22",
+      "url": "https://youtube.com/watch?v=1dsT1xI-X1g"
+    },
+    {
+      "id": "QfmsZx9Xty0",
+      "title": "Match Thread: 26th Match - Royal Challengers Bengaluru  | Fans go crazy \ud83c\udfcf #shorts",
+      "thumb": "https://i.ytimg.com/vi/QfmsZx9Xty0/mqdefault.jpg",
+      "views": 2,
+      "likes": 1,
+      "comments": 0,
+      "duration": "PT26S",
+      "published": "2026-04-22",
+      "url": "https://youtube.com/watch?v=QfmsZx9Xty0"
     }
   ]
 }

@@ -1,10 +1,10 @@
 {
-  "updated": "2026-05-25 10:07 UTC",
+  "updated": "2026-05-26 09:57 UTC",
   "channel": "Tiny Tots Rhymes",
   "subs": 1,
-  "views": 1141,
+  "views": 4,
   "videos": 1,
-  "hours": 74,
+  "hours": 0,
   "history": [
     {
       "date": "2026-04-20",
@@ -257,6 +257,13 @@
       "subs": 1,
       "videos": 1,
       "hours": 74
+    },
+    {
+      "date": "2026-05-26",
+      "views": 4,
+      "subs": 1,
+      "videos": 1,
+      "hours": 0
     }
   ],
   "top_videos": [
@@ -264,7 +271,7 @@
       "id": "CkOBCkYWkpQ",
       "title": "\u201cThe Little Parrot\u2019s Fruit Adventure\u201d",
       "thumb": "https://i.ytimg.com/vi/CkOBCkYWkpQ/mqdefault.jpg",
-      "views": 2,
+      "views": 4,
       "likes": 1,
       "comments": 0,
       "duration": "PT1M13S",

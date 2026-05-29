@@ -1,10 +1,10 @@
 {
-  "updated": "2026-05-28 10:02 UTC",
+  "updated": "2026-05-29 09:58 UTC",
   "channel": "Tiny Tots Rhymes",
   "subs": 1,
-  "views": 4,
-  "videos": 1,
-  "hours": 0,
+  "views": 8,
+  "videos": 2,
+  "hours": 1,
   "history": [
     {
       "date": "2026-04-20",
@@ -278,6 +278,13 @@
       "subs": 1,
       "videos": 1,
       "hours": 0
+    },
+    {
+      "date": "2026-05-29",
+      "views": 8,
+      "subs": 1,
+      "videos": 2,
+      "hours": 1
     }
   ],
   "top_videos": [
@@ -285,12 +292,23 @@
       "id": "CkOBCkYWkpQ",
       "title": "\u201cThe Little Parrot\u2019s Fruit Adventure\u201d",
       "thumb": "https://i.ytimg.com/vi/CkOBCkYWkpQ/mqdefault.jpg",
-      "views": 5,
+      "views": 7,
       "likes": 1,
       "comments": 0,
       "duration": "PT1M13S",
       "published": "2026-05-25",
       "url": "https://youtube.com/watch?v=CkOBCkYWkpQ"
+    },
+    {
+      "id": "9Dgw6cTVQmQ",
+      "title": "ABCD rhymes songs &quot;&quot; Fully animated animated &quot;&quot;&quot; ",
+      "thumb": "https://i.ytimg.com/vi/9Dgw6cTVQmQ/mqdefault.jpg",
+      "views": 1,
+      "likes": 1,
+      "comments": 0,
+      "duration": "PT3M29S",
+      "published": "2026-05-28",
+      "url": "https://youtube.com/watch?v=9Dgw6cTVQmQ"
     }
   ]
 }

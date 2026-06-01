@@ -1,9 +1,9 @@
 {
-  "updated": "2026-05-31 08:46 UTC",
+  "updated": "2026-06-01 11:35 UTC",
   "channel": "Tiny Tots Rhymes",
-  "subs": 1,
+  "subs": 2,
   "views": 8,
-  "videos": 2,
+  "videos": 3,
   "hours": 1,
   "history": [
     {
@@ -299,6 +299,13 @@
       "subs": 1,
       "videos": 2,
       "hours": 1
+    },
+    {
+      "date": "2026-06-01",
+      "views": 8,
+      "subs": 2,
+      "videos": 3,
+      "hours": 1
     }
   ],
   "top_videos": [
@@ -312,6 +319,17 @@
       "duration": "PT1M13S",
       "published": "2026-05-25",
       "url": "https://youtube.com/watch?v=CkOBCkYWkpQ"
+    },
+    {
+      "id": "fymmlDrH0T0",
+      "title": "learning 123 #viral #kids #unexpected #shocking #babyshorts #animals",
+      "thumb": "https://i.ytimg.com/vi/fymmlDrH0T0/mqdefault.jpg",
+      "views": 2,
+      "likes": 0,
+      "comments": 0,
+      "duration": "PT33S",
+      "published": "2026-06-01",
+      "url": "https://youtube.com/watch?v=fymmlDrH0T0"
     },
     {
       "id": "9Dgw6cTVQmQ",

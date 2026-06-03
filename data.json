@@ -1,10 +1,10 @@
 {
-  "updated": "2026-06-02 10:24 UTC",
-  "channel": "Tiny Tots Rhymes",
+  "updated": "2026-06-03 11:00 UTC",
+  "channel": "Street Logic",
   "subs": 2,
-  "views": 8,
-  "videos": 3,
-  "hours": 1,
+  "views": 6,
+  "videos": 1,
+  "hours": 0,
   "history": [
     {
       "date": "2026-04-20",
@@ -313,41 +313,26 @@
       "subs": 2,
       "videos": 3,
       "hours": 1
+    },
+    {
+      "date": "2026-06-03",
+      "views": 6,
+      "subs": 2,
+      "videos": 1,
+      "hours": 0
     }
   ],
   "top_videos": [
     {
-      "id": "CkOBCkYWkpQ",
-      "title": "\u201cThe Little Parrot\u2019s Fruit Adventure\u201d",
-      "thumb": "https://i.ytimg.com/vi/CkOBCkYWkpQ/mqdefault.jpg",
-      "views": 7,
-      "likes": 1,
-      "comments": 0,
-      "duration": "PT1M13S",
-      "published": "2026-05-25",
-      "url": "https://youtube.com/watch?v=CkOBCkYWkpQ"
-    },
-    {
-      "id": "fymmlDrH0T0",
-      "title": "learning 123 #viral #kids #unexpected #shocking #babyshorts #animals",
-      "thumb": "https://i.ytimg.com/vi/fymmlDrH0T0/mqdefault.jpg",
-      "views": 3,
+      "id": "Kt-YBv7oscY",
+      "title": "Interviewer Was NOT Ready For This Answer \ud83d\ude2d",
+      "thumb": "https://i.ytimg.com/vi/Kt-YBv7oscY/mqdefault.jpg",
+      "views": 6,
       "likes": 0,
       "comments": 0,
-      "duration": "PT33S",
-      "published": "2026-06-01",
-      "url": "https://youtube.com/watch?v=fymmlDrH0T0"
-    },
-    {
-      "id": "9Dgw6cTVQmQ",
-      "title": "ABCD rhymes songs &quot;&quot; Fully animated animated &quot;&quot;&quot; ",
-      "thumb": "https://i.ytimg.com/vi/9Dgw6cTVQmQ/mqdefault.jpg",
-      "views": 2,
-      "likes": 1,
-      "comments": 0,
-      "duration": "PT3M29S",
-      "published": "2026-05-28",
-      "url": "https://youtube.com/watch?v=9Dgw6cTVQmQ"
+      "duration": "PT13S",
+      "published": "2026-06-02",
+      "url": "https://youtube.com/watch?v=Kt-YBv7oscY"
     }
   ]
 }

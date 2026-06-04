@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-03 11:00 UTC",
+  "updated": "2026-06-04 09:56 UTC",
   "channel": "Street Logic",
   "subs": 2,
   "views": 6,
@@ -320,19 +320,26 @@
       "subs": 2,
       "videos": 1,
       "hours": 0
+    },
+    {
+      "date": "2026-06-04",
+      "views": 6,
+      "subs": 2,
+      "videos": 1,
+      "hours": 0
     }
   ],
   "top_videos": [
     {
-      "id": "Kt-YBv7oscY",
-      "title": "Interviewer Was NOT Ready For This Answer \ud83d\ude2d",
-      "thumb": "https://i.ytimg.com/vi/Kt-YBv7oscY/mqdefault.jpg",
+      "id": "0hY_VDhzzTg",
+      "title": "street interviews",
+      "thumb": "https://i.ytimg.com/vi/0hY_VDhzzTg/mqdefault.jpg",
       "views": 6,
-      "likes": 0,
-      "comments": 0,
-      "duration": "PT13S",
-      "published": "2026-06-02",
-      "url": "https://youtube.com/watch?v=Kt-YBv7oscY"
+      "likes": 1,
+      "comments": 1,
+      "duration": "PT11S",
+      "published": "2026-06-04",
+      "url": "https://youtube.com/watch?v=0hY_VDhzzTg"
     }
   ]
 }

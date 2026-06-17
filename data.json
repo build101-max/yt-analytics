@@ -1,9 +1,9 @@
 {
-  "updated": "2026-06-16 11:11 UTC",
+  "updated": "2026-06-17 10:57 UTC",
   "channel": "Street Logic",
   "subs": 2,
   "views": 6,
-  "videos": 1,
+  "videos": 2,
   "hours": 0,
   "history": [
     {
@@ -411,9 +411,27 @@
       "subs": 2,
       "videos": 1,
       "hours": 0
+    },
+    {
+      "date": "2026-06-17",
+      "views": 6,
+      "subs": 2,
+      "videos": 2,
+      "hours": 0
     }
   ],
   "top_videos": [
+    {
+      "id": "M16v-3zBTw4",
+      "title": "Testing",
+      "thumb": "https://i.ytimg.com/vi/M16v-3zBTw4/mqdefault.jpg",
+      "views": 4,
+      "likes": 0,
+      "comments": 0,
+      "duration": "PT12M34S",
+      "published": "2026-06-17",
+      "url": "https://youtube.com/watch?v=M16v-3zBTw4"
+    },
     {
       "id": "0hY_VDhzzTg",
       "title": "street interviews",
